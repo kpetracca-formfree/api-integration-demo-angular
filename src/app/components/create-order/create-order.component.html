@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <label>
+    User:
+    <input type="text" [formControl]="userForm" />
+  </label>
+  <label>
+    Password:
+    <input type="password" [formControl]="passwordForm" />
+  </label>
+
+  <button (click)="submitAuthorization()">
+    Set Authorization
+  </button>
+
+  <button (click)="postCreateOrder()">
+    Submit New Order
+  </button>
+
+  <h2>The new order id is: {{ createdOrderId }}</h2>
+  <p>Test order is:</p>
+  <code>{{ order }}</code>
+</div>
