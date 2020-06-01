@@ -36,6 +36,7 @@ export class CreateOrderService {
     };
   }
 
+  // create order using auth credentials and other headers -> DOES NOT WORK
   createOrder(
     user: string,
     password: string,
